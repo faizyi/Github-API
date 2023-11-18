@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vb;
+    background-color: rgb(218, 224, 229);
+    /* background-color: rgb(36, 35, 35); */
+}
+.title{
+    display: flex;
+    justify-content: center;
+        position: relative;
+        top: 40px;
+        right: 80px;
+}
+.title p{
+    font-size: 30px;
+}
+
+.search_bar{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.search_bar .search-user{
+    background-color: white;
+    width: 450px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px; 
+    display: flex;  
+    box-shadow: 0px 0px 10px black;
+}
+.search-user button{
+    display: none;
+}
+.search-user input{
+    width: 170%;
+    padding: 5px;
+    outline: none;
+    background-color: transparent;
+    font-size: 17px;
+    border: none;
+}
+.github_user_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.active{
+    display: none;
+}
+
+.user_container{
+    background-color: white;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px black;
+}
+.user_container .user_profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
+    background-color: black;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 5px;
+}
+.user_container .user_name{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user_name .user-github-name{
+    font-weight: bold;
+    font-size: 19px;
+}
+.user_name .login-name{
+    font-size: 14px;
+}
+.user_name .user_bio{
+    width: 400px;
+    margin-top: 5px;
+}
+.user-rff{
+    display: flex;
+    margin-top:20px;
+    margin-left: 10px;
+}
+h3{
+    color: rgb(189, 186, 186);
+}
+.user-rff .user-repo{
+    margin-right: 25px;
+}
+.user-rff .user-followers{
+    margin-right: 20px;
+}
+.repo{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.followers{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.following{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.user-links{
+    display: flex;
+    margin-top: 50px;
+}
+.user-links .user-joined{
+    margin-right: 150px;
+}
+.user-joined .joined{
+    text-align: center;
+    color: blue;
+}
+.github-url a i{
+    font-size: 30px;
+}
+
+
+
+.loader{
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: black;
+    animation: an1 1s ease infinite;
+    margin-left: 177px;
+    margin-top: 5px;
+}
+@keyframes an1{
+    0% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+
+
+@media (max-width: 463px){
+    .search_bar .search-user{
+        width: 350px;
+    }
+    .title{
+            position: relative;
+            top: 40px;
+            right: 48px;
+    }
+    .title p{
+        font-size: 25px;
+    }
+    .user_container{
+        width: 350px;
+    }
+    .user_name .user_bio{
+        width: 300px;
+    }
+    .user-links{
+        display: flex;
+        margin-top: 40px;
+    }
+    .user-links .user-joined{
+        margin-right: 120px;
+    }
+}
+
+@media (max-width: 390px){
+  .main{
+    position: relative;
+    left: 25px;
+  }
+}
+
+@media (max-width: 325px){
+    .main{
+        position: relative;
+        left: 70px;
+    }
+    .search-user{
+        width: 500px;
+    }
+}
+
+@media (max-width: 280px){
+    .main{
+        position: relative;
+        left: 130px;
+    }
+        .search-user{
+            width: 100px;
+
+        }
+    
+}
+
+
+
+
